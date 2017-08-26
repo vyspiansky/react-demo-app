@@ -10,9 +10,11 @@ Builds the app for production to the build folder.
 
 * Changing the page title from React components via React Helmet
 * Bookmarkable URLs via React Router
+* Webfonts (ex., Roboto, Ionicons)
 
 ## TODO
 
+* Add Google Analytics code.
 * Spinner for AJAX requests
 * Split the code into small chunks to load them on demand)
 * Add a CSS Preprocessor (Sass, Less etc.)

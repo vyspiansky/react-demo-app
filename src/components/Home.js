@@ -4,7 +4,6 @@ import {Helmet} from "react-helmet";
 import Clock from './Clock';
 import Toggle from './Toggle';
 import Greeting from './Greeting';
-import NumberList from './NumberList';
 
 function Welcome(props) {
     return (
@@ -14,7 +13,6 @@ function Welcome(props) {
 
 class Home extends Component {
     render() {
-        const numbers = [1, 2, 3, 4, 5];
         return (
             <div>
                 <Helmet>
@@ -26,7 +24,6 @@ class Home extends Component {
                 <Toggle />
                 <Greeting isLoggedIn={false} />
                 <Greeting isLoggedIn={true} />
-                <NumberList numbers={numbers} />
             </div>
         );
     }
