@@ -1,17 +1,40 @@
 .Menu {
-
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    padding: 25px 10px;
+    position: fixed;
+    top: 0;
+    width: 320px;
 }
 
-.Menu ul {
-    padding-left: 0px;
+.Menu-items, .Menu-profile {
+    margin-bottom: 15px;
 }
 
-.Menu ul li {
-    display: inline-block;
+.Menu-items ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+.Menu-items ul li {
+    border-top: 1px solid #f2f2f2;
     list-style-type: none;
-    padding: 5px 10px;
+    padding: 0;
 }
 
-.App-menu ul li a {
-    
+.Menu-items ul li:first-child {
+    border-top: none;
+}
+
+.Menu-items ul li .icon {
+    padding-right: 10px;
+}
+
+.Menu-items ul li a {
+    color: #2094f1;
+    display: block;
+    font-size: 14px;
+    padding: 10px 15px;
+    text-decoration: none;
 }

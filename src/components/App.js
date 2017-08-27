@@ -6,7 +6,7 @@ import './App.css';
 
 import Header from './Header';
 import Menu from './Menu';
-import Switcher from './Switcher';
+import Main from './Main';
 
 import Home from './Home';
 import NameForm from './NameForm';
@@ -17,30 +17,49 @@ const menuItems = [
       path: '/',
       exact: true,
       component: Home,
-      title: 'Головна'
+      title: 'Головна',
+      icon: 'ion-android-home'
   },
   {
       path: '/form',
       exact: false,
       component: NameForm,
-      title: 'Форма'
+      title: 'Форма',
+      icon: 'ion-android-list'
   },
   {
       path: '/users',
       exact: false,
       component: UserListContainer,
-      title: 'Користувачі'
+      title: 'Користувачі',
+      icon: 'ion-android-people'
   }
 ];
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {isMenuShown: false};
+
+    // This binding is necessary to make `this` work in the callback
+    this.handleMenuClick = this.handleMenuClick.bind(this);
+  }
+
+  handleMenuClick(event) {
+    event.preventDefault();
+
+    this.setState(prevState => ({
+        isMenuShown: !prevState.isMenuShown
+    }));
+  }
+
   render() {
     return (
       <Router>
         <div className="App">
-            <Header />
-            <Menu items={menuItems} />
-            <Switcher items={menuItems} />
+            <Header handleMenuClick={this.handleMenuClick} />
+            <Menu items={menuItems} isShown={this.state.isMenuShown} />
+            <Main items={menuItems} />
         </div>
       </Router>
     );

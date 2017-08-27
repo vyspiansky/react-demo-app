@@ -1,0 +1,12 @@
+.Greeting {
+    font-size: 12px;
+    text-align: center;
+}
+
+.Greeting-success {
+    color: #b2b2b2;
+}
+
+.Greeting-miss {
+    color: #808080;
+}

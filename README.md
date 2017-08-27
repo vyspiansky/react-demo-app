@@ -14,6 +14,7 @@ Builds the app for production to the build folder.
 
 ## TODO
 
+* Slide Menu with animation using CSS 3
 * Add Google Analytics code.
 * Spinner for AJAX requests
 * Split the code into small chunks to load them on demand)

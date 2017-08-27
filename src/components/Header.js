@@ -9,7 +9,7 @@ class Header extends Component {
                     <header>
                         <div className="Header-left">
                             <ul>
-                                <li><a href="#"><i className="icon ion-android-menu"></i></a></li>
+                                <li><a href="#" onClick={this.props.handleMenuClick}><i className="icon ion-android-menu"></i></a></li>
                             </ul>
                         </div>
 

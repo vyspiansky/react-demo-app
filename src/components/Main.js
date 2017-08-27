@@ -6,7 +6,7 @@ import {
 
 import NoMatch from './NoMatch';
 
-class Switcher extends Component {
+class Main extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -30,4 +30,4 @@ class Switcher extends Component {
     }
 }
 
-export default Switcher;
+export default Main;

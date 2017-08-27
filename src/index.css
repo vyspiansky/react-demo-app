@@ -11,8 +11,30 @@ body {
   padding-left: 15px;
 }
 
-.hiden {
-  display: none;
+.hidden {
+  display: none !important;
+}
+
+/* Box Shadow */
+
+.box-shadow-top {
+  box-shadow: 0 -5px 5px -5px #b2b2b2;
+}
+
+.box-shadow-right {
+  box-shadow: 10px 0 50px -5px #b2b2b2;
+}
+
+.box-shadow-bottom {
+  box-shadow: 0 5px 5px -5px #b2b2b2;
+}
+
+.box-shadow-left {
+  box-shadow: -5px 0 5px -5px #b2b2b2;
+}
+
+.box-shadow-all {
+  box-shadow: 0 0 5px #b2b2b2;
 }
 
 /* React spinner */
