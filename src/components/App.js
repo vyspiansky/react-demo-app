@@ -7,6 +7,7 @@ import './App.css';
 import Header from './Header';
 import Menu from './Menu';
 import Main from './Main';
+import Overlay from './Overlay';
 
 import Home from './Home';
 import NameForm from './NameForm';
@@ -60,6 +61,7 @@ class App extends Component {
             <Header handleMenuClick={this.handleMenuClick} />
             <Menu items={menuItems} isShown={this.state.isMenuShown} />
             <Main items={menuItems} />
+            <Overlay items={menuItems} isShown={false} />
         </div>
       </Router>
     );
