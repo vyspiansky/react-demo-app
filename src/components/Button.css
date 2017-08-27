@@ -1,0 +1,26 @@
+.Button {
+    background-color: #2094f1;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font: inherit;
+    font-size: 14px;
+    line-height: normal;
+    overflow: visible;
+    padding: 10px 35px;
+    transition: background-color 250ms ease-out;
+}
+
+.Button:hover {
+    background-color: #fdbf05;
+    transition: background-color 350ms ease-in;
+}
+
+.Button-secondary {
+    background-color: #b2b2b2;
+}
+
+.Button-secondary:hover {
+    background-color: #808080;
+}

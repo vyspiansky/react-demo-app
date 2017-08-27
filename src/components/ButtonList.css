@@ -1,0 +1,14 @@
+.ButtonList ul {
+    margin: 35px 0 45px 0;
+    padding: 0;
+}
+
+.ButtonList ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 45px;
+}
+
+.ButtonList ul li:last-child {
+    margin-right: 0;
+}
