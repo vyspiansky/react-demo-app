@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 
+import TabList from './TabList';
 import ButtonList from './ButtonList';
 
 class Home extends Component {
@@ -22,6 +23,7 @@ class Home extends Component {
                 tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis
                 pulvinar facilisis. Ut felis.</p>
 
+                <TabList />
                 <ButtonList />
 
             </div>

@@ -1,0 +1,35 @@
+.TabList ul {
+    border-bottom: 3px solid #f2f2f2;
+    margin: 35px 0 45px 0;
+    padding: 0;
+}
+
+.TabList ul li {
+    display: inline-block;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.TabList ul li a {
+    color: #808080;
+    display: inline-block;
+    margin-bottom: -3px;
+    padding: 10px 35px 10px 32px;
+    text-decoration: none;
+    transition: background-color 150ms ease-out, color 100ms ease-out;
+}
+
+.TabList ul li a:hover,
+.TabList .Tab-active a {
+    border-bottom: 3px solid #fdbf05;
+}
+
+.TabList ul li a:hover {
+    background-color: #fdbf05;
+    color: #fff;
+    transition: background-color 200ms ease-in, color 150ms ease-in;
+}
+
+.TabList .Tab-active a {
+    color: #fdbf05;
+}

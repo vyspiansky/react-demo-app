@@ -9,11 +9,14 @@
     line-height: normal;
     overflow: visible;
     padding: 10px 35px;
+    text-decoration: none;
     transition: background-color 250ms ease-out;
 }
 
 .Button:hover {
     background-color: #fdbf05;
+    color: #fff;
+    text-decoration: none;
     transition: background-color 350ms ease-in;
 }
 

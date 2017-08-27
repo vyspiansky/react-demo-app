@@ -9,7 +9,7 @@ class Button extends Component {
 
         switch (this.props.type) {
             case 'link':
-                control = <a className={buttonClassName} role="button">{this.props.text}</a>
+                control = <a href="#" className={buttonClassName} role="button">{this.props.text}</a>
                 break;
             case 'text':
                 control = <span className={buttonClassName} role="button">{this.props.text}</span>
