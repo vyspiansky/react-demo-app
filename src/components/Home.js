@@ -3,6 +3,7 @@ import {Helmet} from "react-helmet";
 
 import TabList from './TabList';
 import ButtonList from './ButtonList';
+import Message from './Message';
 
 class Home extends Component {
     render() {
@@ -26,6 +27,9 @@ class Home extends Component {
                 <TabList />
                 <ButtonList />
 
+                <Message text="Vestibulum tortor quam, feugiat vitae, ultricies. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas." />
+                <Message type="fail" text="Quisque sit amet est et sapien ullamcorper pharetra." />
+                <Message type="info" text="Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi." />
             </div>
         );
     }

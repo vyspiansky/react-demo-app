@@ -1,0 +1,28 @@
+.Message {
+    border: 2px solid;
+    font-size: 14px;    
+    margin-bottom: 25px;
+    padding: 10px 15px;
+}
+
+.Message.message-success {
+    background-color: #d2ead3;
+    border-color: #4bad4e;
+    color: #4bad4e;
+}
+
+.Message.message-fail {
+    background-color: #fabdb8;
+    border-color: #f24235;
+    color: #f24235;
+}
+
+.Message.message-info {
+    background-color: #feefc0;
+    border-color: #fdbf05;
+    color: #fdbf05;
+}
+
+.Message .icon {
+    padding-right: 5px;
+}

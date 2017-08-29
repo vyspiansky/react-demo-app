@@ -18,7 +18,7 @@ class Menu extends Component {
             listItems: props.items.map((item, index) => (
                 <li key={index} onClick={that.handleMenuItemClick}>
                     <Link to={item.path}>
-                        <i className={"icon " + item.icon}></i>
+                        <i className={'icon ' + item.icon}></i>
                         {item.title}
                     </Link>
                 </li>
