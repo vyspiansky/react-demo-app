@@ -40,15 +40,15 @@ const menuItems = [
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {isMenuShown: false};
+    this.state = {
+      isMenuShown: false
+    };
 
     // This binding is necessary to make `this` work in the callback
-    this.handleMenuClick = this.handleMenuClick.bind(this);
+    this.toggleMenu = this.toggleMenu.bind(this);
   }
 
-  handleMenuClick(event) {
-    event.preventDefault();
-
+  toggleMenu(event) {
     this.setState(prevState => ({
         isMenuShown: !prevState.isMenuShown
     }));
@@ -58,10 +58,10 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-            <Header handleMenuClick={this.handleMenuClick} />
-            <Menu items={menuItems} isShown={this.state.isMenuShown} />
+            <Header onToggleMenu={this.toggleMenu} />
+            <Menu isShown={this.state.isMenuShown} onToggleMenu={this.toggleMenu} items={menuItems} />
             <Main items={menuItems} />
-            <Overlay items={menuItems} isShown={false} />
+            <Overlay isShown={this.state.isMenuShown} onToggleMenu={this.toggleMenu} />
         </div>
       </Router>
     );

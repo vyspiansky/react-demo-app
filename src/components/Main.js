@@ -6,6 +6,8 @@ import {
 
 import NoMatch from './NoMatch';
 
+import './Main.css';
+
 class Main extends Component {
     constructor(props) {
         super(props);

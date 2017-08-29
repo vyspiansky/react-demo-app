@@ -8,9 +8,15 @@ import './Menu.css';
 class Menu extends Component {
     constructor(props) {
         super(props);
+
+        // This binding is necessary to make `this` work in the callback
+        this.handleMenuItemClick = this.handleMenuItemClick.bind(this);
+
+        const that = this;
+
         this.state = {
             listItems: props.items.map((item, index) => (
-                <li key={index}>
+                <li key={index} onClick={that.handleMenuItemClick}>
                     <Link to={item.path}>
                         <i className={"icon " + item.icon}></i>
                         {item.title}
@@ -20,9 +26,13 @@ class Menu extends Component {
         };
     }
 
+    handleMenuItemClick(event) {
+        this.props.onToggleMenu(event);
+    }
+
     render() {
         return (
-            <div className={"Menu box-shadow-right" + (this.props.isShown ? '' : ' hidden')}>
+            <div className={"Menu" + (this.props.isShown ? '' : ' hidden')}>
                 <nav className="Menu-items">
                     <ul>
                         {this.state.listItems}

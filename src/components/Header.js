@@ -2,6 +2,18 @@ import React, { Component } from 'react';
 import './Header.css';
 
 class Header extends Component {
+    constructor(props) {
+        super(props);
+    
+        // This binding is necessary to make `this` work in the callback
+        this.handleMenuIconClick = this.handleMenuIconClick.bind(this);
+      }
+
+    handleMenuIconClick(event) {
+        event.preventDefault();
+        this.props.onToggleMenu(event);
+    }
+
     render() {
         return (
             <div className="Header">
@@ -9,7 +21,11 @@ class Header extends Component {
                     <header>
                         <div className="Header-left">
                             <ul>
-                                <li><a href="#" onClick={this.props.handleMenuClick}><i className="icon ion-android-menu"></i></a></li>
+                                <li>
+                                    <a href="#" onClick={this.handleMenuIconClick}>
+                                        <i className="icon ion-android-menu"></i>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
 
