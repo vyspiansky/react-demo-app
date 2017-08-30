@@ -26,9 +26,16 @@
 .Header ul li a {
   color: #fff;
   display: inline-block;
-  width: 32px;
   height: 32px;
+  opacity: 0.75;
   text-decoration: none;
+  transition: opacity 150ms ease-out;
+  width: 32px;
+}
+
+.Header ul li a:hover {
+  opacity: 1;
+  transition: opacity 250ms ease-in;
 }
 
 .Header-left,

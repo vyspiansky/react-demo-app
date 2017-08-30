@@ -33,14 +33,16 @@ class Menu extends Component {
     render() {
         return (
             <div className={"Menu" + (this.props.isShown ? '' : ' hidden')}>
-                <nav className="Menu-items">
-                    <ul>
-                        {this.state.listItems}
-                    </ul>
-                </nav>
+                <div>
+                    <nav className="Menu-items">
+                        <ul>
+                            {this.state.listItems}
+                        </ul>
+                    </nav>
 
-                <div className="Menu-profile">
-                    <Greeting isLoggedIn={false} />
+                    <div className="Menu-profile">
+                        <Greeting isLoggedIn={false} />
+                    </div>
                 </div>
             </div>
         );
