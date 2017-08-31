@@ -1,6 +1,6 @@
 # Math.org.ua
 
-URL: http://math.org.ua/
+URL: [math.org.ua](https://math.org.ua/)
 
 ## Commands
 
