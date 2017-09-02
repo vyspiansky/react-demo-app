@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 
+import ProgressBar from './ProgressBar';
+
 import TabList from './TabList';
 import CheckboxList from './CheckboxList';
 import RadioList from './RadioList';
 import ButtonList from './ButtonList';
+
 import Message from './Message';
 
 class Home extends Component {
@@ -16,6 +19,10 @@ class Home extends Component {
                 </Helmet>
         
                 <h1>Home</h1>
+
+                <ProgressBar current="3" total="8" />
+                <ProgressBar current="4" total="5" />
+                <ProgressBar current="0" total="10" />
 
                 <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas.</p>
 

@@ -12,7 +12,7 @@ class UserListContainer extends Component {
     }
 
     componentDidMount() {
-        var that = this;
+        const that = this;
 
         fetch('/data/users.json')
             .then(function(response) {

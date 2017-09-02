@@ -27,6 +27,6 @@
 
 .RadioList ul li input[type="radio"] + label:before {
     display: block;
-    font-size: 28px;
+    font-size: 16px;
     float: left;
 }
