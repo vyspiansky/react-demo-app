@@ -11,8 +11,12 @@ class ProgressBar extends Component {
         let cells = [];
 
         for (let i=1; i <= total; i++) {
+            const isPassed = current >= i;
+
             cells.push(
-                <td key={i} className={current >= i ? 'passed' : ''} width={100/total + '%'}>{i}</td>
+                <td key={i} className={isPassed ? 'passed' : ''} width={100/total + '%'}>
+                    <i className={'icon ' + (isPassed ? 'ion-checkmark' : 'ion-android-walk')}></i>
+                </td>
             );
         }
 
