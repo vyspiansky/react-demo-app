@@ -1,0 +1,32 @@
+.RadioList ul {
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+
+.RadioList ul li {
+    border-bottom: 2px solid #f2f2f2;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.RadioList ul li:last-child {
+    border-bottom: none;
+}
+
+.RadioList ul li label {
+    cursor: pointer;
+    display: block;
+    padding: 15px 10px;
+}
+
+.RadioList ul li label::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.RadioList ul li input[type="radio"] + label:before {
+    display: block;
+    font-size: 28px;
+    float: left;
+}

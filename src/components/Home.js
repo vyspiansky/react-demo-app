@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import {Helmet} from "react-helmet";
 
 import TabList from './TabList';
+import CheckboxList from './CheckboxList';
+import RadioList from './RadioList';
 import ButtonList from './ButtonList';
 import Message from './Message';
 
@@ -23,6 +25,12 @@ class Home extends Component {
                 <p>Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget
                 tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis
                 pulvinar facilisis. Ut felis.</p>
+
+                <p>Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+                <CheckboxList />
+
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                <RadioList />
 
                 <TabList />
                 <ButtonList />

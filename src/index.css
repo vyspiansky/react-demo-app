@@ -74,3 +74,53 @@ body {
  0% { opacity: 1; }
  100% { opacity: 0.15; }
 }
+
+/* Styled Radio Buttons and Checkboxes */
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  color: #808080;
+}
+
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "\f372";
+  color: #2094f1;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Ionicons";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  padding-right: 0.4em;
+  speak: none;
+  text-rendering: auto;
+  text-transform: none;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
+  color: #fdbf05;
+}
+
+input[type="checkbox"]:checked + label:before {
+  content: "\f373";
+}
+
+input[type="radio"] + label:before {
+  content: "\f3a6";
+}
+
+input[type="radio"]:checked + label:before {
+  content: "\f3a7";
+}

@@ -55,6 +55,12 @@ class App extends Component {
   }
 
   render() {
+    if (this.state.isMenuShown) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    
     return (
       <Router>
         <div className="App">

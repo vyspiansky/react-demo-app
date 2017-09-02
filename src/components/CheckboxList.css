@@ -1,0 +1,33 @@
+.CheckboxList ul {
+    margin: 0 0 25px 0;
+    padding: 0;
+}
+
+.CheckboxList ul li {
+    border-bottom: 2px solid #f2f2f2;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+.CheckboxList ul li:last-child {
+    border-bottom: none;
+}
+
+.CheckboxList ul li label {
+    cursor: pointer;
+    display: block;
+    padding: 15px 10px;
+}
+
+.CheckboxList ul li label::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.CheckboxList ul li input[type="checkbox"] + label:before,
+.CheckboxList ul li input[type="radio"] + label:before {
+    display: block;
+    font-size: 28px;
+    float: left;
+}
