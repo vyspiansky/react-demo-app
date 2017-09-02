@@ -14,7 +14,7 @@ class ProgressBar extends Component {
             cells.push(
                 <td key={i} className={current >= i ? 'passed' : ''} width={100/total + '%'}>{i}</td>
             );
-        }//Progress Bar
+        }
 
         return (
             <div className="ProgressBar">
