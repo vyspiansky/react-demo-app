@@ -16,9 +16,9 @@ class UserListContainer extends Component {
 
         fetch('/data/users.json')
             .then(function(response) {
-                return response.json()
+                return response.json();
             }).then(function(json) {
-                that.setState({users: json.users})
+                that.setState({users: json.users});
             }).catch(function(error) {
                 console.log('Request failed', error)
             });
