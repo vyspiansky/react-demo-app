@@ -43,7 +43,7 @@ npm install --save react-redux
 
 Try 
 
-* running this command again as root/Administrator or
+* run this command again as root/Administrator or
 * add "--no-optional", for example,
 ```
 npm install --save react-helmet --no-optional
