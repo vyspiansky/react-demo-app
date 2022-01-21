@@ -1,4 +1,4 @@
-# [DEPRECATED] Math.org.ua
+# [DEPRECATED] Math.org.ua Draft v0.0.1
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
